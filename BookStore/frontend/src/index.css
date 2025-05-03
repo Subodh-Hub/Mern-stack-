@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Warough;
+  src: url("./assets/fonts/Warough-BF67e4f10dbd081.ttf");
+}
+@font-face {
+  font-family: Spacethink;
+  src: url("./assets/fonts/spacethink.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-Warough: Warough, "Sans-serrif";
+  --font-SpaceThink: Spacethink, "Sans-serrif";
+  --font-Playfair: "Playfair", "sans-serif";
+  --font-Poppins: "Poppins", sans-serif;
+}
+
