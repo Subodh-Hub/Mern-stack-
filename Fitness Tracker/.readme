@@ -1,0 +1,4 @@
+add the .env file inorder to run the code to the backend folder
+PORT = 5555
+MONGO_URI=mongodb+srv://root:<password>@mernstack.oboh0hk.mongodb.net/
+SECRET= yoursecretkey
