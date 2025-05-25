@@ -9,7 +9,6 @@ const Navbar = () => {
   const handleLogout = () => {
     logout();
   };
-  console.log("userState", userState);
   return (
     <header className="my-0 mx-auto flex items-center justify-between py-2 px-3 h-[95px]">
       <div>

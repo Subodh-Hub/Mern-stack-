@@ -26,7 +26,6 @@ const useAddWorkout = () => {
         .then((res) => {
           toast.success("Workout added successfully");
           dispatch({ type: "CREATE_WORKOUT", payload: res.data?.workout });
-          console.log("res", res.data);
           setLoading(false);
         })
         .catch((err) => {

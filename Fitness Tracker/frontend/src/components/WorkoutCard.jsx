@@ -5,13 +5,13 @@ import useWorkoutContext from "../hook/useWorkoutContext";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
 const WorkoutCard = ({ workout }) => {
-  const { id, title, load, reps, createdAt } = workout;
+  const { _id, title, load, reps, createdAt } = workout;
 
   const { dispatch } = useWorkoutContext();
   const handleDelete = () => {
     apiClient
-      .delete(`/workouts/${id}`)
-      .then((res) => dispatch({ type: "DELETE_WORKOUT", payload: id }))
+      .delete(`/workouts/${_id}`)
+      .then((res) => dispatch({ type: "DELETE_WORKOUT", payload: _id, message: res.data.message }))
       .catch((err) => console.log(err));
   };
   return (

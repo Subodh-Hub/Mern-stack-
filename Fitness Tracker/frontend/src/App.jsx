@@ -9,7 +9,6 @@ import ProtectedRoutes from "./pages/ProtectedRoutes.jsx";
 
 const App = () => {
   const { userState } = useAuthContext();
-  const { user } = userState;
   const routeElement = useRoutes([
     {
       path: "/",

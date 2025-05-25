@@ -26,7 +26,6 @@ const Home = () => {
         });
     }
   }, [user]);
-  console.log("login auth", userState);
 
   if(!user){
     setError("You must logged in to view this page");
